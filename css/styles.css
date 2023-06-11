@@ -5,9 +5,14 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: "Cabinet Grotesk", sans-serif;
+    src: url(../fonts/CabinetGrotesk-Extrabold.woff);
+}
+
 .header {
     padding-top: 35px;
-    margin-bottom: 79px;
+    margin-bottom: 100px;
 }
 
 .header__container {
@@ -73,3 +78,83 @@
     padding: 16px 24px;
 }
 
+.services {
+    margin-bottom: 90px;
+}
+
+.services__container {
+    max-width: 1118px;
+    margin: 0 auto;
+}
+.services__h2 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #1C1C1C;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.services__h3 {
+    display: block;
+    margin: 0 auto 36px;
+    font-family: 'Work Sans',sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #5C5C5C;
+    max-width: 930px;
+    text-align: center;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 22px;
+}
+.services__grid-item {
+    padding: 56px 23px 38px;
+    border: 1px solid #1C1C1C;
+    text-align: center;
+    transition: background-color 0.3s ease-in;
+}
+
+.services__grid-item.hover {
+    background-color: #1E1E1E;
+}
+
+.services__img {
+    margin-bottom: 32px;
+}
+
+.services__h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #5C5C5C;
+    margin-bottom: 10px;
+}
+
+.services__h4.hover {
+    color: #FFFFFF;
+}
+
+.services__text-p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+    color: #5C5C5C;
+}
+
+.services__text-p.hover {
+    color: #fff;
+}
+
+.services__grid-item:hover {
+    background-color: #1E1E1E;
+}
