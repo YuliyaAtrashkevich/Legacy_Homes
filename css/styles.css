@@ -12,6 +12,10 @@
     src: url(../fonts/CabinetGrotesk-Extrabold.woff);
 }
 
+body {
+    background-color: #F0F0F0;
+}
+
 .header {
     padding-top: 35px;
     margin-bottom: 100px;
@@ -140,7 +144,7 @@
         }
     }
 
-.services {
+.services, .workflow {
     margin-bottom: 90px;
 }
 
@@ -149,7 +153,7 @@
     margin: 0 auto;
 }
 
-.services__h2 {
+.services__h2, .workflow__h2 {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 900;
     font-size: 60px;
@@ -159,7 +163,7 @@
     margin-bottom: 4px;
 }
 
-.services__h3 {
+.services__h3, .workflow__h3 {
     display: block;
     margin: 0 auto 36px;
     font-family: 'Work Sans', sans-serif;
@@ -248,4 +252,72 @@
     .services__h2 {
         font-size: 54px;
     }
+}
+
+.workflow__container {
+    max-width: 996px;
+    margin: 0 auto;
+}
+
+.workflow__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    gap: 0;
+    padding-top: 34px;
+
+}
+
+.workflow__grid-item {
+    max-width: 559px;
+    text-align: center;
+}
+
+.workflow__grid-item:nth-child(odd) {
+    border-right: 3px solid #E0E0E0;
+    border-bottom: 3px solid #E0E0E0;
+    padding-top: 70px;
+    padding-right: 85px;
+    padding-bottom: 67px;
+    padding-left: 5px;
+}
+
+.workflow__grid-item:nth-child(even) {
+    border-bottom: 3px solid #E0E0E0;
+    padding-top: 70px;
+    padding-right: 5px;
+    padding-bottom: 67px;
+    padding-left: 72px;
+}
+
+.workflow__grid-item:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.workflow__grid-item:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.workflow__img {
+    max-width: 412px;
+}
+
+.workflow__h4 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #1C1C1C;
+    max-width: 412px;
+}
+
+.workflow__text-p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: center;
+    color: #5C5C5C;
+    max-width: 412px;
 }
