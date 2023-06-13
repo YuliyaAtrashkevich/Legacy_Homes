@@ -326,6 +326,10 @@ body {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .workflow__img {
+        display: block;
+        width: 100%;
+    }
 }
 
 @media (max-width: 880px) {
@@ -335,22 +339,27 @@ body {
     }
     .workflow__grid {
         grid-template-columns: repeat(1, 1fr);
+        padding-top: 0;
     }
     .workflow__grid-item:nth-child(odd) {
         border-right: none;
-        padding: 70px 67px 67px;
+        padding: 40px 67px 47px;
     }
     .workflow__grid-item:first-child {
         padding-top: 0;
     }
     .workflow__grid-item:nth-child(even) {
-        padding: 70px 67px 67px;
+        padding: 40px 67px 47px;
     }
     .workflow__grid-item:nth-last-child(2) {
         border-bottom: 3px solid #E0E0E0;
     }
     .workflow__grid-item:nth-last-child(1) {
         border-bottom: none;
+    }
+    .workflow__img {
+        display: block;
+        width: 100%;
     }
 }
 
