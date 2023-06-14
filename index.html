@@ -9,19 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="fonts/CabinetGrotesk-Extrabold.woff" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="header">
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#services"><i class="material-icons">done_all</i>Services</a></li>
+        <li><a href="#!"><i class="material-icons">domain</i>Properties</a></li>
+        <li><a href="#!"><i class="material-icons">recent_actors</i>About Us</a></li>
+        <li><a href="#!"><i class="material-icons">phone_in_talk</i>Contact Us</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+      </ul>
+
+    <header id="home" class="header">
         <div class="header__container">
             <div class="header__menu">
                 <img src="img/logo.svg" alt="Legacy Homes" class="header__logo">
                 <div class="header__nav">
                     <div class="header__burger">
-                        <span class="header__burger-line"></span>
-                        <span class="header__burger-line"></span>
-                        <span class="header__burger-line"></span>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     </div>
                     <ul class="header___menu-items">
                         <li><a href="#" class="header__menu-item selected">Home</a></li>
@@ -39,7 +51,7 @@
         </div>
     </header>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="services__container">
             <h2 class="services__h2">Services</h2>
             <h3 class="services__h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s....</h3>
@@ -116,7 +128,8 @@
             </div>
         </div>
     </section>
-    
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

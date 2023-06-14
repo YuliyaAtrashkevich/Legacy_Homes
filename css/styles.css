@@ -82,6 +82,10 @@ body {
     padding: 16px 24px;
 }
 
+.header__burger {
+    display: none;
+}
+
 @media (max-width: 1130px) {
     .header__container {
         padding-left: 15px;
@@ -101,18 +105,13 @@ body {
     }
 
     .header__burger {
-        width: 40px;
+        display: block;
+        width: 45px;
+        height: 45px;
         border: 1px solid #1C1C1C;
         margin-left: 30px;
-        padding: 10px 0 9px;
-    }
-
-    .header__burger-line {
-        display: block;
-        width: 22px;
-        height: 3px;
-        background-color: #1C1C1C;
-        margin: 0 auto 4px;
+        padding: 8px 4px;
+        text-align: center;
     }
 }
 
@@ -141,6 +140,10 @@ body {
         .header__burger {
             align-self: center;
             margin-left: 10px;
+        }
+
+        .header__burger {
+            display: block;
         }
     }
 
@@ -397,3 +400,6 @@ body {
         border-bottom: none;
     }
 }
+
+/* Всплывающее меню */
+
