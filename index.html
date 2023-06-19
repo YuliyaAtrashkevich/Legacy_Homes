@@ -25,7 +25,39 @@
         <li><a class="header__menu-item" href="#!"><i class="material-icons">phone_in_talk</i>Contact Us</a></li>
         <div class="divider"></div>
         <li><a href="#!" class="sidenav-close header__menu-item"><i class="material-icons">close</i>Close</a></li>
-      </ul>
+    </ul>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal__close-icon"><a class="modal-close" href="#!"><i class="material-icons">close</i></a></div>
+        <div class="modal-content">
+                <h4>Welcome back</h4>
+                <p>Enter the email address associated with your account, and we’ll send a magic link to your inbox.</p>
+                <form class="modal__form">
+                    <input class="modal__form-input" type="email" placeholder="Please, enter your email">
+                </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close header__btn up">Enter</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal__close-icon"><a class="modal-close" href="#!"><i class="material-icons">close</i></a></div>
+        <div class="modal-content">
+                <h4>Let's be friends</h4>
+                <p>Fill out the form below.</p>
+                <form class="modal__form">
+                    <input class="modal__form-input" type="text" placeholder="Your name">
+                    <input class="modal__form-input" type="text" placeholder="Your surname">
+                    <input class="modal__form-input" type="email" placeholder="Your email">
+                </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close header__btn up">Sign Up Here</a>
+        </div>
+    </div>
+
 
     <header id="home" class="header">
         <div class="header__container">
@@ -33,7 +65,8 @@
                 <img src="img/logo.svg" alt="Legacy Homes" class="header__logo">
                 <div class="header__nav">
                     <div class="header__burger">
-                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a>
                     </div>
                     <ul class="header___menu-items">
                         <li><a href="#" class="header__menu-item selected">Home</a></li>
@@ -43,8 +76,8 @@
                         <li><a href="#" class="header__menu-item">Contact Us</a></li>
                     </ul>
                     <div class="header__authorization">
-                        <a href="#" class="header__btn in">Sign In</a>
-                        <a href="#" class="header__btn up">Sign Up</a>
+                        <a href="#modal1" class="header__btn in modal-trigger">Sign In</a>
+                        <a href="#modal2" class="header__btn up modal-trigger">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -54,37 +87,44 @@
     <section id="services" class="services">
         <div class="services__container">
             <h2 class="services__h2">Services</h2>
-            <h3 class="services__h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s....</h3>
+            <h3 class="services__h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s....</h3>
             <div class="services__grid">
                 <div class="services__grid-item hover">
                     <img src="img/plumber_icon.png" alt="Plumber" class="services__img hover">
                     <h4 class="services__h4 hover">Plumber</h4>
-                    <p class="services__text-p hover">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="services__text-p hover">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
                 <div class="services__grid-item">
                     <img src="img/painting_icon.png" alt="Painting" class="services__img">
                     <h4 class="services__h4">Painting</h4>
-                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
                 <div class="services__grid-item">
                     <img src="img/logistics_icon.png" alt="Logistics" class="services__img">
                     <h4 class="services__h4">Logistics</h4>
-                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
                 <div class="services__grid-item">
                     <img src="img/cleaning_icon.png" alt="Cleaning" class="services__img">
                     <h4 class="services__h4">Cleaning</h4>
-                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
                 <div class="services__grid-item">
                     <img src="img/furnitures_icon.png" alt="Furnitures" class="services__img">
                     <h4 class="services__h4">Furnitures</h4>
-                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
                 <div class="services__grid-item">
                     <img src="img/more_icon.png" alt="More then" class="services__img">
                     <h4 class="services__h4">More then</h4>
-                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="services__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
             </div>
         </div>
@@ -93,37 +133,44 @@
     <section class="workflow">
         <div class="workflow__container">
             <h2 class="workflow__h2">How it works?</h2>
-            <h3 class="workflow__h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s....</h3>
+            <h3 class="workflow__h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s....</h3>
             <div class="workflow__grid">
                 <div class="workflow__grid-item">
                     <img src="img/workflow_pictire_01.png" alt="Looking for a tenant?" class="workflow__img">
                     <h4 class="workflow__h4">Looking for a tenant?</h4>
-                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard...</p>
+                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard...</p>
                 </div>
                 <div class="workflow__grid-item">
                     <img src="img/workflow_pictire_02.png" alt="A dedicated" class="workflow__img">
                     <h4 class="workflow__h4">A dedicated</h4>
-                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard...</p>
+                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard...</p>
                 </div>
                 <div class="workflow__grid-item">
                     <img src="img/workflow_pictire_03.png" alt="Marketing & Promotions" class="workflow__img">
                     <h4 class="workflow__h4">Marketing & Promotions</h4>
-                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.</p>
                 </div>
                 <div class="workflow__grid-item">
                     <img src="img/workflow_pictire_04.png" alt="Freedom from bogus callers" class="workflow__img">
                     <h4 class="workflow__h4">Freedom from bogus callers</h4>
-                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.</p>
                 </div>
                 <div class="workflow__grid-item">
                     <img src="img/workflow_pictire_05.png" alt="Tenant Selects Property" class="workflow__img">
                     <h4 class="workflow__h4">Tenant Selects Property</h4>
-                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.</p>
                 </div>
                 <div class="workflow__grid-item">
                     <img src="img/workflow_pictire_06.png" alt="Deal Closure" class="workflow__img">
                     <h4 class="workflow__h4">Deal Closure</h4>
-                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="workflow__text-p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.</p>
                 </div>
             </div>
         </div>
