@@ -11,8 +11,6 @@
     <link href="fonts/CabinetGrotesk-Extrabold.woff" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/> -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -20,9 +18,8 @@
     <ul id="slide-out" class="sidenav">
         <li><a class="header__menu-item" href="#home"><i class="material-icons">home</i>Home</a></li>
         <li><a class="header__menu-item" href="#services"><i class="material-icons">done_all</i>Services</a></li>
-        <li><a class="header__menu-item" href="#!"><i class="material-icons">domain</i>Properties</a></li>
-        <li><a class="header__menu-item" href="#!"><i class="material-icons">recent_actors</i>About Us</a></li>
-        <li><a class="header__menu-item" href="#!"><i class="material-icons">phone_in_talk</i>Contact Us</a></li>
+        <li><a class="header__menu-item" href="#workflow"><i class="material-icons">domain</i>How it works?</a></li>
+        <li><a class="header__menu-item" href="#contacts"><i class="material-icons">phone_in_talk</i>Contact Us</a></li>
         <div class="divider"></div>
         <li><a href="#!" class="sidenav-close header__menu-item"><i class="material-icons">close</i>Close</a></li>
     </ul>
@@ -31,11 +28,11 @@
     <div id="modal1" class="modal">
         <div class="modal__close-icon"><a class="modal-close" href="#!"><i class="material-icons">close</i></a></div>
         <div class="modal-content">
-                <h4>Welcome back</h4>
-                <p>Enter the email address associated with your account, and we’ll send a magic link to your inbox.</p>
-                <form class="modal__form">
-                    <input class="modal__form-input" type="email" placeholder="Please, enter your email">
-                </form>
+            <h4>Welcome back</h4>
+            <p>Enter the email address associated with your account, and we’ll send a magic link to your inbox.</p>
+            <form class="modal__form">
+                <input class="modal__form-input" type="email" placeholder="Please, enter your email">
+            </form>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close header__btn up">Enter</a>
@@ -45,13 +42,13 @@
     <div id="modal2" class="modal">
         <div class="modal__close-icon"><a class="modal-close" href="#!"><i class="material-icons">close</i></a></div>
         <div class="modal-content">
-                <h4>Let's be friends</h4>
-                <p>Fill out the form below.</p>
-                <form class="modal__form">
-                    <input class="modal__form-input" type="text" placeholder="Your name">
-                    <input class="modal__form-input" type="text" placeholder="Your surname">
-                    <input class="modal__form-input" type="email" placeholder="Your email">
-                </form>
+            <h4>Let's be friends</h4>
+            <p>Fill out the form below.</p>
+            <form class="modal__form">
+                <input class="modal__form-input" type="text" placeholder="Your name">
+                <input class="modal__form-input" type="text" placeholder="Your surname">
+                <input class="modal__form-input" type="email" placeholder="Your email">
+            </form>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close header__btn up">Sign Up Here</a>
@@ -69,11 +66,10 @@
                                 class="material-icons">menu</i></a>
                     </div>
                     <ul class="header___menu-items">
-                        <li><a href="#" class="header__menu-item selected">Home</a></li>
-                        <li><a href="#" class="header__menu-item">Servives</a></li>
-                        <li><a href="#" class="header__menu-item">Properties</a></li>
-                        <li><a href="#" class="header__menu-item">About Us</a></li>
-                        <li><a href="#" class="header__menu-item">Contact Us</a></li>
+                        <li><a href="#home" class="header__menu-item selected">Home</a></li>
+                        <li><a href="#services" class="header__menu-item">Services</a></li>
+                        <li><a href="#workflow" class="header__menu-item">How it works?</a></li>
+                        <li><a href="#contacts" class="header__menu-item">Contact Us</a></li>
                     </ul>
                     <div class="header__authorization">
                         <a href="#modal1" class="header__btn in modal-trigger">Sign In</a>
@@ -130,7 +126,7 @@
         </div>
     </section>
 
-    <section class="workflow">
+    <section id="workflow" class="workflow">
         <div class="workflow__container">
             <h2 class="workflow__h2">How it works?</h2>
             <h3 class="workflow__h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -175,6 +171,37 @@
             </div>
         </div>
     </section>
+
+    <section id="contacts" class="contacts">
+        <div class="contacts__container">
+            <h2 class="contacts__h2">Contact Us</h2>
+            <h3 class="contacts__h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+            <div class="contacts__grid">
+                <div class="contacts__grid-item">
+                    <img src="img/contacts_address_icon.svg" alt="Address" class="contacts__icon">
+                    <h4 class="contacts__h4">Address</h4>
+                    <p class="contacts__text-p">2427 Rath Pines<br>Apt. 153 Jaquanmouth,<br>VT 46167</p>
+                </div>
+                <div class="contacts__grid-item">
+                    <img src="img/contacts_phone_icon.svg" alt="Phone" class="contacts__icon">
+                    <h4 class="contacts__h4">Phone</h4>
+                    <p class="contacts__text-p"><a class="contacts__link" href="tel:+14605178819">+1 (460) 517-8819</a></p>
+                </div>
+                <div class="contacts__grid-item">
+                    <img src="img/contacts_mail_icon.svg" alt="E-mail" class="contacts__icon">
+                    <h4 class="contacts__h4">E-mail</h4>
+                    <p class="contacts__text-p"><a href="mailto:manager@legacyhome.com" class="contacts__link">manager@legacyhome.com</a></p>
+                </div>
+                <div class="contacts__grid-item">
+                    <img src="img/contacts_telegram_icon.svg" alt="Telegram" class="contacts__icon">
+                    <h4 class="contacts__h4">Telegram</h4>
+                    <p class="contacts__text-p"><a href="https://t.me/legacyhome" class="contacts__link">@legacyhome</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
