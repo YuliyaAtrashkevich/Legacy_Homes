@@ -504,7 +504,7 @@ body {
     .services,
     .workflow,
     .contacts {
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
 
     .contacts__container {
@@ -524,6 +524,55 @@ body {
     .contacts__h4 {
         margin-bottom: 10px;
     }
+}
+
+.footer {
+    background-color: #1C1C1C;
+}
+.footer__container {
+    max-width: 996px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__flex-item {
+    color: #e0e0e0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+@media (max-width: 1130px) {
+    .footer__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 880px) {
+    .footer__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer__flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
 
